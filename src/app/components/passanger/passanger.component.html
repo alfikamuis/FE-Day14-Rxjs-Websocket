@@ -1,0 +1,24 @@
+<div class="child2" >
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Kota</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of listData">
+                <td>{{ p.id }}</td>
+                <td>{{ p.nama }}</td>
+                <td>{{ p.kota }}</td>
+                <td>
+                    <button class="btn btn-primary btn-sm" (click)="viewRow(p)"> view</button>
+                    <button class="btn btn-info btn-sm" (click)="updateRow(p)"> Edit</button>
+                    <button class="btn btn-danger btn-sm" (click)="deleteRow(p)"> Delete</button>
+                </td>
+              </tr>
+        </tbody>
+    </table>
+  </div>

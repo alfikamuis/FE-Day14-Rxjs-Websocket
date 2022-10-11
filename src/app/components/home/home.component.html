@@ -1,0 +1,20 @@
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder">Every article published here!</h1>
+            <p class="lead mb-0">Welcome to Blog Home!</p>
+        </div>
+    </div>
+</header>
+
+<div class="container card mb-4" *ngFor="let item of published">
+    <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..."></a>
+    <div class="card-body">
+        <div class="small text-muted">January 1, 2022</div>
+        <h2 class="card-title h4">{{item.title}}</h2>
+        <p class="card-text">{{item.description}}</p>
+        <a class="btn btn-primary" href="#!">Read more →</a>
+    </div>
+</div>
+
+           

@@ -1,0 +1,14 @@
+<div class="container">
+    <legend><h1 class="fw-bolder">Update article</h1></legend>
+    <form>
+      <div class="mb-3">
+        <label for="txtTitle" class="form-label">Title</label>
+        <input type="text" name="title" [(ngModel)] = "article.title" class="form-control" id="txtTitle" />
+      </div>
+      <div class="mb-3">
+        <label for="txtDescription" class="form-label">Description</label>
+        <input type="text" name="description" [(ngModel)] = "article.description" class="form-control" id="txtDescription" />
+      </div>
+      <button type="button" (click)="update()" class="btn btn-primary">Update</button>
+    </form>
+  </div>

@@ -1,0 +1,33 @@
+<div class="child4">
+    <form (ngSubmit)="submitValues()" >
+        <div class="form-group">
+            <input
+              class="form-control"
+              type="number"
+              name="id"
+              [(ngModel)]="id"
+              disabled="true"
+            />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            name="nama"
+            [(ngModel)]="nama"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            name="kota"
+            [(ngModel)]="kota"
+          />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit"> Update </button>
+        </div>
+      </form>
+    </div>
+  

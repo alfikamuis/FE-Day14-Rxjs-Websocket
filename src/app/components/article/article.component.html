@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="col col-md-4">
+      <a class="btn btn-primary" routerLink="/create-article">Add Article</a>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of article">
+        <td>{{ item.title }}</td>
+        <td>{{ item.description }}</td>
+        <td>
+          <a routerLink="/article" (click)="pulishedToHome(item)">Publish</a>
+        </td>
+        <td>
+          <a [routerLink]="['/edit-article', item.id]">Edit</a>
+        </td>
+        <td>
+          <a routerLink="/article" (click)="openDeleteModel(item,mymodal)">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <div class="mb-2" *ngFor="let item of sent">
+    Send Message: {{item.source}} {{item.content}}
+  </div>
+  <div class="mb-2" *ngFor="let item of received">
+    Receive Message: {{item.source}} {{item.content}}
+  </div>
+</div>
+
+<!-- popup -->
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title" style="color:red">Warning!</h4>
+    <button type="button" class="btn-close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    Are you sure to delete <b>{{selectedArticle.title}}</b> title?
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-danger" (click)="deleteById();modal.close('Save click')">Delete</button>
+  </div>
+</ng-template>

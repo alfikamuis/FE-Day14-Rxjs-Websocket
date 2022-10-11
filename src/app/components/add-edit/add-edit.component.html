@@ -1,0 +1,42 @@
+<div class="child1">
+  <form (ngSubmit)="submitValues()" #myForm="ngForm">
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="number"
+        name="txtId"
+        placeholder="nomor id"
+        [(ngModel)]="id"
+      />
+    </div>
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="text"
+          name="txtNama"
+          placeholder="masukkan nama pengguna"
+          [(ngModel)]="nama"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="text"
+          name="txtKota"
+          placeholder="masukkan nama kota"
+          [(ngModel)]="kota"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <button
+          class="btn btn-primary"
+          type="submit"
+          [disabled]="!myForm.form.valid">
+          Add
+        </button>
+        <button class="btn" type="button" (click)="myForm.reset()">Reset</button>
+      </div>
+    </form>
+  </div>

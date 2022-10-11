@@ -1,0 +1,30 @@
+<div class="container-fluid parent">
+    <div class="row">
+        <div class="col-md-3">
+            <app-add-edit 
+              *ngIf="isAdd === true"
+              (getAddedRow)="addRow($event)"
+            ></app-add-edit>
+            <app-update
+              *ngIf="updateData"
+              [update]="updateData" 
+              (onUpdate)="onUpdateData($event)">
+            </app-update>
+        </div>
+        <div class="col-md-9">
+            <app-passanger
+              [listData]="newData"
+              (getDeletedRow)="deleteRow($event)"
+              (viewSelected)="viewRow($event)"
+              (getUpdatedRow)="updateRow($event)"
+          ></app-passanger>
+        </div>
+    </div>
+  
+    <div>
+      <app-view 
+        *ngIf="selectData" 
+        [selectedData]="selectData"
+        ></app-view>
+    </div>    
+  </div>

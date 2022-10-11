@@ -1,0 +1,48 @@
+{
+  "article": [
+    {
+      "id": 1,
+      "title": "angular 14",
+      "description": "how to make modular SAP in angular"
+    },
+    {
+      "id": 2,
+      "title": "spring boot",
+      "description": "backend framework with java programming language"
+    }
+  ],
+  "published": [
+    {
+      "id": 1,
+      "articleId": 2,
+      "title": "spring boot",
+      "description": "backend framework with java programming language"
+    },
+    {
+      "id": 2,
+      "articleId": 2,
+      "title": "spring boot",
+      "description": "backend framework with java programming language"
+    },
+    {
+      "id": 3,
+      "articleId": 2,
+      "title": "spring boot",
+      "description": "backend framework with java programming language"
+    },
+    {
+      "id": 4,
+      "articleId": 1,
+      "title": "angular 14",
+      "description": "how to make modular SAP in angular"
+    }
+  ],
+  "register": [
+    {
+      "id": 1,
+      "email": "alfika@gmail.com",
+      "password": "masukaja",
+      "username": "alfika"
+    }
+  ]
+}
