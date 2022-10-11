@@ -1,6 +1,6 @@
-# FE-Day14-Rxjs-Websocket
+# FE-Day14-Rxjs-Websocket 
 
-<details><summary><b>Check server connection<<</b></summary>
+<details><summary><b>Check server connection (server on branch: server)<<</b></summary>
   
 ![image](https://user-images.githubusercontent.com/38674801/195156675-a63aa037-c491-4891-96bb-44de82ce919d.png)
 ![image](https://user-images.githubusercontent.com/38674801/195156754-c97cb9a6-4af9-43fd-88b4-ca9ddce7d424.png)
