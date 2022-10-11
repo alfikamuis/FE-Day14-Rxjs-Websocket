@@ -1,12 +1,13 @@
-## ws-server
-
-## Features
-WebSocket server using Express and NodeJS 
+## example ws-server using Express and NodeJS 
 
 ## Installation
+```sh
 npm install
-
 node index.js
+```
+
+
+
 
 
 
